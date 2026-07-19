@@ -1,8 +1,7 @@
 import type { Config } from "@react-router/dev/config";
 
-// BASE_PATH is set to "/website/" when deploying to GitHub Pages
-// (project pages are served from a subpath). Drop it once a custom
-// domain is connected.
+// Site is served at the domain root (neatlie.com). BASE_PATH exists as
+// an escape hatch for serving from a subpath if ever needed again.
 const basePath = process.env.BASE_PATH ?? "/";
 
 export default {
