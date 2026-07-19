@@ -26,15 +26,15 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          # Project pages are served from /neat-lie/. Remove this once
+          # Project pages are served at /website/. Remove this once
           # the custom domain is connected.
-          BASE_PATH: /neat-lie/
+          BASE_PATH: /website/
       # The prerendered page is emitted under the basename subdirectory,
-      # but the Pages artifact root is already served at /neat-lie/, so
+      # but the Pages artifact root is already served at /website/, so
       # hoist it over the SPA fallback at the root.
       - run: |
-          mv build/client/neat-lie/index.html build/client/index.html
-          rmdir build/client/neat-lie
+          mv build/client/website/index.html build/client/index.html
+          rmdir build/client/website
       - uses: actions/upload-pages-artifact@v3
         with:
           path: build/client
