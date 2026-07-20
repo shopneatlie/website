@@ -46,8 +46,8 @@ export default function Home() {
         Neat Lie
       </h1>
 
-      <div className="reveal mt-12 max-w-lg space-y-6 text-base leading-relaxed text-charcoal/80 sm:text-lg">
-        <p>
+      <div className="reveal mt-14 max-w-xl space-y-7 text-left text-lg leading-relaxed text-charcoal/85 sm:text-xl sm:leading-relaxed [&>p]:text-pretty">
+        <p className="first-letter:float-left first-letter:mr-3 first-letter:text-[3.6em] first-letter:leading-[0.78] first-letter:font-medium first-letter:text-forest">
           Every course has one story that never gets told the same way twice.
           Ours happened on the back nine, right at that hour when the light goes
           long and the beverage cart has given up on you. Something came out of
